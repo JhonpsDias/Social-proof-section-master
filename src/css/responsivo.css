@@ -1,0 +1,68 @@
+@media(max-width: 689px) {
+
+    body {
+        background: url('../img/bg-pattern-bottom-mobile.svg') no-repeat;
+        background-size: cover;
+    }
+    
+    .main {
+        background: url('../img/bg-pattern-top-mobile.svg') no-repeat;
+        height: 100%;
+    }
+
+    .container {
+        grid-template-areas: "text-painel"
+                             "classificacao-painel"
+                             "comentario-painel ";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .text-painel {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .container .text-painel .heading-painel {
+        font-size: 3.4rem;
+        margin-top: 40px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .container .text-painel .paragref-painel {
+        width: 280px;
+        text-align: center;
+    }
+
+    .container .classificacao-painel {
+        gap: 15px;
+        padding: 0;
+        align-items: center;
+        margin-bottom: 30px;
+        width: 400px;
+    }
+
+    .container .classificacao-painel .classificacao-container {
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .container .classificacao-painel .classificacao-container.report,
+    .container .classificacao-painel .classificacao-container.best-tech {
+        margin: 0;
+    }
+
+    .container .classificacao-painel .classificacao-container p {
+        font-size: 1.5rem;
+    }
+
+    .container .comentario-painel {
+        flex-direction: column;
+        width: 300px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,147 @@
+html {
+    font-size: 62.5%;
+    font-family: var(--font-size);
+}
+
+body {
+    background: url('../img/bg-pattern-bottom-desktop.svg') no-repeat;
+    background-size: cover;
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    background: url('../img/bg-pattern-top-desktop.svg') no-repeat;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+.container {
+    display: grid;
+    grid-template-areas: "text-painel classificacao-painel"
+    "comentario-painel comentario-painel";
+    grid-template-columns: (repeat(2, 1fr));
+    border-radius: 7px;
+}
+
+.container .text-painel {
+    grid-area: text-painel;
+}
+
+.container .text-painel .heading-painel {
+    font-size: 5rem;
+    width: 350px;
+    color: var(--very-dark-magenta);
+    margin-bottom: 15px;
+}
+
+.container .text-painel .paragref-painel {
+    font-size: 1.6rem;
+    line-height: 25px;
+    width: 380px;
+    color: var(--dark-grayish-magenta);
+}
+
+.container .classificacao-painel {
+    grid-area: classificacao-painel;
+    padding: 0 50px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.container .classificacao-painel .classificacao-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--light-grayish-magenta); 
+    margin-bottom: 15px;
+    padding: 20px 25px;
+    border-radius: 7px;
+    width: 400px;
+}
+
+.container .classificacao-painel .classificacao-container.report {
+    margin-left: 25px;
+}
+
+.container .classificacao-painel .classificacao-container.best-tech {
+    margin-left: 50px;
+}
+
+.container .classificacao-painel .classificacao-container .img-stars {
+    margin-right: 15px;
+}
+
+.container .classificacao-painel .classificacao-container img {
+    width: 13px;
+    margin-right: 5px;
+}
+
+.container .classificacao-painel .classificacao-container p {
+    font-weight: 900;
+    color: var(--very-dark-magenta);
+    font-size: 1.6rem;
+}
+
+.container .comentario-painel {
+    grid-area: comentario-painel;
+    margin-top: 78px;
+    display: flex;
+    gap: 20px;
+}
+
+.container .comentario-painel .user-coment {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-magenta);
+    padding: 25px;
+    border-radius: 7px;
+    height: 200px;
+}
+
+.container .comentario-painel .user-coment.irene-roberts{
+    margin-top: 15px;
+}
+
+.container .comentario-painel .user-coment.anne-wallace {
+    margin-top: 25px;
+}
+
+.container .comentario-painel .user-coment .user-information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container .comentario-painel .user-coment .user-information img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 15px;
+}
+
+.container .comentario-painel .user-coment .user-information .user-text {
+    line-height: 15px;
+}
+
+.container .comentario-painel .user-coment .user-information .user-text .name-user {
+    font-size: 1.3rem;
+    color: var(--white);
+    font-weight: 900;
+}
+
+.container .comentario-painel .user-coment .user-information .user-text span {
+    color: var(--soft-pink);
+    font-size: 1.3rem;
+}
+
+.container .comentario-painel .user-coment .user-information .user-text {
+    flex-direction: column;
+}
+
+.container .comentario-painel .user-coment .coment-profille p {
+    color: var(--white);
+    width: 250px;
+    font-size: 1.5rem;
+}
